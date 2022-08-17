@@ -4,7 +4,7 @@
 #!author=@R·E https://github.com/impasse
 
 [Script]
-allow_bns = type=http-response,pattern=^https:\/\/\d+gate\.bns\.qq\.com\/ingame\/api\/character/allowed\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/impasse/surge_modules/master/bns/allow_bns.js
+bns_allow = type=http-response,pattern=^https:\/\/\d+gate\.bns\.qq\.com\/ingame\/api\/character/allowed\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/impasse/surge_modules/master/bns/bns_allow.js
 
 [MITM]
 hostname = %APPEND% *gate.bns.qq.com
