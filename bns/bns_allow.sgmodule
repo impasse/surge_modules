@@ -1,0 +1,10 @@
+#!name=bns_allow
+#!desc=解除个人信息保护法的限制
+#!openUrl=https://github.com/impasse/surge_modules/bns
+#!author=@R·E https://github.com/impasse
+
+[Script]
+allow_bns = type=http-response,pattern=^https:\/\/\d+gate\.bns\.qq\.com\/ingame\/api\/character/allowed\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/impasse/surge_modules/master/bns/allow_bns.js
+
+[MITM]
+hostname = %APPEND% *gate.bns.qq.com
